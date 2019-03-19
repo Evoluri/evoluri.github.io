@@ -6,7 +6,7 @@ var evo_contact = [{
   "email":"dione.mxes@gmail.com",
   "whats":"43991143750",
   "fb":"/dimaxdeveloper",
-  "web":'https://google.com',
+  "web":'https://coign.tech',
 }];
 console.log(evo_contact);
 var evo_xSy = 'Desenvolvido por: ';
@@ -25,15 +25,15 @@ function evo__view(type){
   }
   else if(exibeType == 'email')
   {
-    evo__content= '';
+    evo__content= '<a href="mailto:'+type+'" target="_blank" '+evo__color+'>'+evo_xName+'</a>';
   }
   else if(exibeType == 'whats')
   {
-    evo__content= '';
+    evo__content= '<a href="https://api.whatsapp.com/send?phone=55'+type+'" target="_blank" '+evo__color+'>'+evo_xName+'</a>';
   }
   else if(exibeType == 'fb')
   {
-    evo__content= '';
+    evo__content= '<a href="https://fb.com/'+type+'" target="_blank" '+evo__color+'>'+evo_xName+'</a>';
   }
   
   return '<small>'+evo_xSy+evo__content+'</small>';
