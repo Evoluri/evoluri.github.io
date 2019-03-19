@@ -29,7 +29,7 @@ function evo__view(type){
   }
   else if(exibeType == 'whats')
   {
-    evo__content= '<a href="https://api.whatsapp.com/send?phone=55'+type+'&text=Olá, vim de referencia de '+evo_PageTitle+'" target="_blank" '+evo__color+'>'+evo_xName+'</a>';
+    evo__content= '<a href="https://api.whatsapp.com/send?phone=55'+type+'&text=Olá, vim da referencia de '+evo_PageTitle+'" target="_blank" '+evo__color+'>'+evo_xName+'</a>';
   }
   else if(exibeType == 'fb')
   {
