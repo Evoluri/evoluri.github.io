@@ -23,15 +23,15 @@ function evo__view(type){
   }
   else if(exibeType == 'email')
   {
-    evo__content '';
+    evo__content= '';
   }
   else if(exibeType == 'whats')
   {
-    evo__content '';
+    evo__content= '';
   }
   else if(exibeType == 'fb')
   {
-    evo__content '';
+    evo__content= '';
   }
   
   return evo_xSy+'<small>'+evo__content+'</small>';
