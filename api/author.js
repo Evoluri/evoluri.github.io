@@ -1,25 +1,39 @@
+
+var evo_xName = 'Coign';
 var exibeType = 'email'; //email, whats, web, facebook
+
 var evo_contact = [{
   "email":"dione.mxes@gmail.com",
   "whats":"43991143750",
   "fb":"/dimaxdeveloper",
-  "web":false,
+  "web":'https://google.com',
 }];
 
-/*
-var evo_xEmail = 'dione.mxes@gmail.com';
-var evo_xName = 'Coign';
-var evo_xLink = 'https://google.com';
+var evo_xSy = 'Desenvolvido por: ';
 var evo_xQuery = '?ref=';
-var evo_xSy = 'Desenvolvido por:';
-var evo_PageUrl = document.URL;*/
-//document.getElementById("evo--author").innerHTML = '<small>'+evo_xSy+' <a href="'+evo_xLink+evo_xQuery+evo_PageUrl+'" target="_blank" style="color:rgba(255,255,255,0.6);">'+evo_xName+'</a></small>';
-
-
-document.getElementById("evo--author").innerHTML = '<small>'+evo__view(evo_contact[exibeType])+'</small>';
+var evo_PageUrl = document.URL;
 
 function evo__view(type){
-
-  return 'teste site developement';
+  var evo__content;
+  var evo__color = 'style="color:rgba(255,255,255,0.6);"';
+  
+  if(exibeType == 'web')
+  {
+    evo__content '<a href="'+type+evo_xQuery+evo_PageUrl+'" target="_blank" '+evo__color+'>'+evo_xName+'</a>';
+  }
+  else if(exibeType == 'email')
+  {
+    evo__content '';
+  }
+  else if(exibeType == 'whats')
+  {
+    evo__content '';
+  }
+  else if(exibeType == 'fb')
+  {
+    evo__content '';
+  }
+  
+  return evo_xSy+'<small>'+evo__content+'</small>';
   
 }
