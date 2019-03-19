@@ -8,7 +8,7 @@ var evo_contact = [{
   "fb":"/dimaxdeveloper",
   "web":'https://coign.tech',
 }];
-console.log(evo_contact);
+
 var evo_xSy = 'Desenvolvido por: ';
 var evo_xQuery = '?ref=';
 var evo_PageUrl = document.URL;
