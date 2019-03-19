@@ -1,6 +1,6 @@
 
 var evo_xName = 'Coign';
-var exibeType = 'email'; //email, whats, web, facebook
+var exibeType = 'web'; //email, whats, web, facebook
 
 var evo_contact = [{
   "email":"dione.mxes@gmail.com",
@@ -21,7 +21,7 @@ function evo__view(type){
   
   if(exibeType == 'web')
   {
-    //evo__content '<a href="'+type+evo_xQuery+evo_PageUrl+'" target="_blank" '+evo__color+'>'+evo_xName+'</a>';
+    evo__content= '<a href="'+type+evo_xQuery+evo_PageUrl+'" target="_blank" '+evo__color+'>'+evo_xName+'</a>';
   }
   else if(exibeType == 'email')
   {
@@ -36,6 +36,6 @@ function evo__view(type){
     evo__content= '';
   }
   
-  return evo_xSy+'<small>'+evo__content+'</small>';
+  return '<small>'+evo_xSy+evo__content+'</small>';
   
 }
