@@ -8,7 +8,7 @@ var evo_contact = [{
   "fb":"/dimaxdeveloper",
   "web":'https://google.com',
 }];
-
+console.log(evo_contact);
 var evo_xSy = 'Desenvolvido por: ';
 var evo_xQuery = '?ref=';
 var evo_PageUrl = document.URL;
@@ -19,7 +19,7 @@ function evo__view(type){
   
   if(exibeType == 'web')
   {
-    evo__content '<a href="'+type+evo_xQuery+evo_PageUrl+'" target="_blank" '+evo__color+'>'+evo_xName+'</a>';
+    //evo__content '<a href="'+type+evo_xQuery+evo_PageUrl+'" target="_blank" '+evo__color+'>'+evo_xName+'</a>';
   }
   else if(exibeType == 'email')
   {
