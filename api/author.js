@@ -13,6 +13,8 @@ var evo_xSy = 'Desenvolvido por: ';
 var evo_xQuery = '?ref=';
 var evo_PageUrl = document.URL;
 
+document.getByElementId('evo--author').innerHTML = evo__view(evo_contact[0][exibeType]);
+
 function evo__view(type){
   var evo__content;
   var evo__color = 'style="color:rgba(255,255,255,0.6);"';
