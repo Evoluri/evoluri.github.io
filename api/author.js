@@ -18,7 +18,7 @@ var evo_PageUrl = document.URL;*/
 
 document.getElementById("evo--author").innerHTML = '<small>'+evo__view(evo_contact[exibeType])+'</small>';
 
-function evo__view(type=NULL){
+function evo__view(type){
 
   return 'teste site developement';
   
